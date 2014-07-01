@@ -1,0 +1,14 @@
+RewriteEngine on
+
+# RETRIEVE
+RewriteRule ^webservice/info/?$ webservice/index.php?retrieve=serverInfo
+RewriteRule ^webservice/patient/?$ webservice/index.php?retrieve=patient
+RewriteRule ^webservice/patientForAutocomplete/?$ webservice/index.php?retrieve=patientForAutocomplete
+RewriteRule ^webservice/usuario/([0-9]+)/?$ webservice/index.php?retrieve=usuario&id=$1
+
+# CREATE
+RewriteRule ^webservice/createPatient/?$ index.php?create=patient
+
+# UPDATE
+RewriteRule ^webservice/updatePatient/?$ webservice/index.php?update=patient
+RewriteRule ^webservice/updateUser/?$ webservice/index.php?update=user

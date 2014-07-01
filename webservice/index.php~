@@ -1,0 +1,26 @@
+<?php
+session_start();
+/* incluir paginas necessarias (nao mudar a ordem) */
+include('../INCLUDES/uses.php');
+include('../INCLUDES/conecta.php');
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ScalaWeb</title>
+
+<?php 
+include_once('../INCLUDES/cabecalhos.php');
+include('../INCLUDES/strings.php');
+?>
+</head>
+<body>
+<?php	
+if (count($_GET) > 0) include('retrieve.php');
+if (count($_POST) > 0) include('create.php');
+if (count($_PUT) > 0) include('update.php');
+if (count($_DELETE) > 0) include('delete.php');	
+?>	
+</body>
+</html>

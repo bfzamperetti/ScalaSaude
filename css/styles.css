@@ -1,0 +1,256 @@
+body, html{ /*background: url(../img/bg.png); */ background-color:#FFF; font-family: 'Futura', arial; font-size:14px; color: #444; top:0; left:0; padding:0; margin:0; position: absolute; width: 100%; height: 100%;}
+a{ color: #222; text-decoration: none;}
+ul{ margin:0; padding:0; }
+li{ margin:0; padding:0; }
+td{border:0;}
+
+.mainMenu{width: 100%; height: 90px; color: #222; background-color:#2C3E50; margin:0;}
+.mainMenu ul{ margin:0; padding: 0;list-style:none;}
+.mainMenu ul li{float:left; margin-left:1px; padding:30px; background-color:#3F586D; color:#FFF; cursor:pointer;}
+.mainMenu li:hover, .mainMenu .currentItem{background-color:#49697A;}
+
+.subMenu{width: 100%; display: inline-block; color: #222; background-color:#ebebeb; margin:0;}
+.subMenu ul{ margin:0; padding: 0;list-style:none;}
+.subMenu ul li{float:left; margin-left:1px; padding:10px; background-color:#e0e0e0; color:#222; cursor:pointer;}
+.subMenu li:hover, .subMenu .currentItem{background-color:#8c8c8c; color: #fff;}
+
+.secondWorkPlaces div{ display:none; }
+
+.center{ width: 100%; clear:both; text-align: center; }
+
+.standardSubmitButton{ color: #fff; background: 2ecc71; border: none; outline: none; cursor: pointer; font-size: 16px; padding: 5px; border-radius: 3px;  }
+.standardInput{ padding: 5px; color: #222; background: #eee; border:0; }
+.inputSelectPatient{ font-size: 18px; width: 600px; padding: 10px; }
+.inputSelectPatientButton{ float:right; }
+
+.selectPatientArea{ margin-top: 100px; margin-bottom: 50px; text-align: left; display: inline-block; }
+
+.addPatientArea{ margin-top: 20px; margin-bottom: 50px; text-align: left; width: 800px; display: inline-block; }
+.addPatientArea .addPatientSection{ width: 380px; margin: 10px; display: inline-block; float:left; }
+.addPatientArea .addPatientSection .addPatientItem{ width: 100%; background: #eee; display: inline-block; margin: 3px; float:left; }
+.addPatientArea .addPatientSection .addPatientItem .addPatientLabel{ padding: 5px; display: inline-block; }
+.addPatientArea .addPatientSection .addPatientItem .addPatientInput{ width: 230px; border: 1px solid #ccc; float: right; padding: 3px; background: #fff; border-radius: 3px; font-size: 13px; }
+.addPatientArea .addPatientSection h3{ clear:both; margin: 4px; padding-top: 10px; }
+.addPatientButton{ clear:both; float:right; }
+
+.editPatientArea{ margin-bottom: 50px; margin-top: 20px; text-align: left; width: 800px; display: inline-block; }
+.editPatientArea .initEditPatientButton{ float:right; cursor: pointer; clear:both; display:inline-block; width: 30px; height: 30px; }
+.editPatientArea .initEditPatientButton img{  width: 100%; height: 100%; }
+.editPatientArea .editPatientSection{ width: 380px; margin: 10px; display: inline-block; float:left; }
+.editPatientArea .editPatientSection .editPatientItem{ width: 100%; background: #eee; display: inline-block; margin: 3px; float:left; }
+.editPatientArea .editPatientSection .editPatientItem .editPatientLabel{ padding: 5px; display: inline-block; }
+.editPatientArea .editPatientSection .editPatientItem .editPatientField{ width: 220px; float: right; padding: 4px; height: 18px; line-height: 18px; background: #f8f8f8; border-left: 1px dashed #666; font-size: 13px; }
+.editPatientArea .editPatientSection .editPatientItem .editPatientInput{ width: 220px; border: 1px solid #ccc; float: right; padding: 3px; background: #fff; border-radius: 3px; font-size: 13px; display:none; }
+.editPatientArea .editPatientSection h3{ clear:both; margin: 4px; padding-top: 10px; }
+.editPatientArea .editPatientButton{  float:right; display:none; margin: 3px; }
+.editPatientArea .cancelEditPatientButton{  float:right; display:none; margin: 3px; }
+
+.editMyDataArea{ margin-bottom: 50px; margin-top: 20px; text-align: left; width: 800px; display: inline-block; }
+.editMyDataArea .initEditMyDataButton{ float:right; cursor: pointer; clear:both; display:inline-block; width: 30px; height: 30px; }
+.editMyDataArea .initEditMyDataButton img{  width: 100%; height: 100%; }
+.editMyDataArea .editMyDataSection{ width: 380px; margin: 10px; display: inline-block; float:left; }
+.editMyDataArea .editMyDataSection .editMyDataItem{ width: 100%; background: #eee; display: inline-block; margin: 3px; float:left; }
+.editMyDataArea .editMyDataSection .editMyDataItem .editMyDataLabel{ padding: 5px; display: inline-block; }
+.editMyDataArea .editMyDataSection .editMyDataItem .editMyDataField{ width: 220px; float: right; padding: 4px; height: 18px; line-height: 18px; background: #f8f8f8; border-left: 1px dashed #666; font-size: 13px; }
+.editMyDataArea .editMyDataSection .editMyDataItem .editMyDataInput{ width: 220px; border: 1px solid #ccc; float: right; padding: 3px; background: #fff; border-radius: 3px; font-size: 13px; display:none; }
+.editMyDataArea .editMyDataSection h3{ clear:both; margin: 4px; padding-top: 10px; }
+.editMyDataArea .editMyDataButton{  float:right; display:none; margin: 3px; }
+.editMyDataArea .cancelEditMyDataButton{  float:right; display:none; margin: 3px; }
+
+/*Tela de Login*/
+
+.logo{ margin-top:20px; margin-left:55px; }
+.standardContent{ color: #222; margin-bottom: 10px; background: #FFF; clear:both; border-left: 1px solid #ccc; border-top: 1px solid #eee; border-bottom: 2px solid #aaa; border-right: 1px solid #aaa; }
+.headerTitle{ margin-top:50px; margin-left:15px;}
+.standardHeader{ font-weight: bold;text-align: left;  margin-top:-12px; padding: 3px; font-family:"Myriad Pro Light";font-size: 20px; color: #fff; background: #2c3e50; background-image:url(../img/fade.png); height: 85px; line-height: 25px; -moz-border-top-left-radius: 15px; -moz-border-top-right-radius: 15px;border-top-left-radius: 15px; border-top-right-radius: 15px;  }
+.standardInner{ width: 90%; padding: 10px; font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif; font-weight:500; font-size: 16px; color: #666; display:inline-block;  -moz-border-bottom-left-radius: 55px; -moz-border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;}
+.standardInner .standardInput input{ border: 1px solid #ccc; padding: 3px; margin: 3px; margin-left: 0; }
+.standardInner .standardInput input:focus{ border: 1px solid #038; }
+.standardInner .standardButton input{ border: 1px solid #ccc; padding: 3px; margin: 3px; float: right; cursor: pointer; }
+.standardInner .standardButton{background-image:url(../img/botao.png); background-size:100px 50px; background-repeat:no-repeat; text-align:center; float:right; width:100px; height:50px; margin-top:10px;}
+.standardInner .standardButton h4{ color:#FFF; margin-top:15px;}
+.standardLabel a{color: #999; text-decoration: underline; float:right;}
+.standardLabel a:hover{ color: #666; }
+.standardInner .standardButton a img{float:right; width:80px; margin-top:10px;}
+.standardInner .standardButton a h4{ }
+.standardInfo { display:inline-block; font-weight: bold; }
+.standardSeparator{ width: 100%; height: 1px; border-bottom: 1px solid #eee; background: #999; margin-top: 4px; margin-bottom: 4px; }
+
+.initialPage{ text-align: center; }
+.initialPage .standardContent{ margin-top: 20px; display:inline-block; text-align: left; width: 400px; }
+.initialPage .standardInner{ width: 380px; }
+.initialPage .standardInner .leftImage{ width: 110px; float:left; padding: 7px; margin: 5px; padding-left: 0; position: relative; }
+.initialPage .standardInner .leftImage img{ margin-left:15px; width: 80px; height:80px;}
+.initialPage form{ float:left; display:inline-block; border-left: 1px solid #ccc; padding-left: 5px;}
+
+.controlPanel .standardContent{ float:left; margin: 5px; margin-bottom: 10px; width: 80%; }
+.controlPanel .controlPanelHeader { width: 100%; text-align: center; font-weight: bold; font-size: 38px; margin-bottom: 10px; background: #fafafa; border-bottom: #ccc 1px solid;}
+.controlPanel .controlPanelHeader img{ height: 30px; margin-right: 10px;}
+.controlPanel .logout{ float:right; margin: 5px; height: 30px;  }
+
+.standardLabel{ width: 100%; }
+.workPlaces .standardInput{  }
+
+.divsForDialogs{ padding: 5px; display: none;}
+.button{ cursor: pointer; font-size: 16px; display: inline-block; background: #dedede; border: 1px solid #ccc; padding: 2px; margin: 2px; }
+.buttonLarge{ cursor: pointer; font-size: 16px; height: 24px; background: #27ae60; border: 1px solid #259954; color:#fff; width: 100% }
+.imgContent{ padding: 3px; border: 1px solid #ccc; background: #fff; display:inline-block; }
+
+.clock{position: absolute;}
+.clock img{ position: absolute; margin-top:15px;}
+.period{ display: inline-block; position: absolute; margin-left: 20px;}
+
+.contentNav{ width: 100%; float:left; padding-top: 4px; background: #FFF; border-bottom: 1px solid #ccc;}
+.contentNav ul{ width: 98%; padding-left: 1%; padding-right: 1%;}
+.contentNav li{ font-size:18px; float:left; height:35px; background: #DEE0E0; color:#696C6D; border: 1px solid #ABAFB2; border-bottom:none; padding: 4px; margin:0; margin-right: 5px; float:left; -webkit-border-top-left-radius: 3px; -webkit-border-top-right-radius: 3px; -moz-border-radius-topleft: 3px; -moz-border-radius-topright: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; cursor:pointer;}
+.contentNav li:hover{background-color:#ECF0F1;}
+.contentNav li p{ margin:10px;}
+.contentNav .currentItem{ background:#1abc9c; height:35px; color: #fff; font-weight:bold; border: 1px solid #16a085; border-bottom: none;}
+.contentNav .currentItem:hover{background-color:#22D3B1;}
+.contentNav .patientZone{ float:right; margin-right: 1%; border-radius: 5px 5px 0 0 ; background: #ccc; display: inline-block; line-height: 30px; }
+.contentNav .patientZone .patientName{ font-weight: bold; padding: 4px; float:left; line-height: 36px; }
+.contentNav .patientZone .patientCheck{ cursor:pointer; font-weight: bold; padding: 4px; float:left; color: #fff; border-radius: 5px; display: inline-block; margin: 3px; background: 2ecc71;  }
+
+
+.dialog{ position: absolute; height: 100%; width: 100%; top:0; left:0; }
+.dialog .transparentLayer{ position: fixed; background: url(../img/spacer.png); height: 100%; width: 100%; }
+.dialog .boxDialog{ position: absolute; display: inline-block; left: 50%; top: 50%; padding: 5px; background: #999; border-left: 2px solid #ccc; border-bottom: 2px solid #ccc;  }
+.dialog .boxDialog .buttonBox{ background: #fff; height: 30px; display: inline-block; width: 98%; padding: 1%; border-top: 1px solid #ccc; }
+
+.dialogScheduleConfigChooseClock{ padding: 3px; margin-left: 60px; margin-top: 20px; border: solid 1px #ccc; clear:both; height: 100px; width: 130px; background: #eee; border-top: 1px solid #ccc; }
+.dialogScheduleConfigChooseClock .period{  position: absolute; margin-left: 35px;  }
+.dialogScheduleConfigChooseClock .clock{ position: absolute; }
+
+.dialogNewProject .imgContent{ float:left; cursor: pointer; margin: 3px; }
+
+.dialogMedicineInputLabels{ padding: 4px; width: 240px; display:inline-block; border: 1px solid #ccc; }
+.dialogMedicineInputLabels .miniLabel{ margin: 3px; width: 20px; height: 20px; border: 1px solid #ccc; float:left; cursor: pointer;}
+.selectedLabel{ clear: both; width: 20px; height: 20px;  display:inline-block; border: 1px solid #ccc;  }
+
+.dialogChooseDoseImageContent{ padding: 1%; width: 95%; display:inline-block; border: 1px solid #ccc; }
+.dialogChooseDoseImageContent img{ cursor: pointer; border: 1px solid #ccc; margin: 2px; }
+.selectedDoseImage{ clear: both; display:inline-block;  }
+
+.toolBar{display: inline-block; width: 100%; background: #ecf0f1; border-bottom: #ccc 1px solid;}
+.toolBar img{ height: 50px; cursor: pointer; margin: 2px; margin-left:15px;}
+.toolBar .divisor{ height: 50px; width: 0; border-left: 1px solid #ccc; display:inline-block; margin: 3px; }
+
+.toolBar .selectors{ display:inline-block;}
+.toolBar .selectors .radioTitle{ height:30px; display:inline-block; float:left; }
+.toolBar .selectors .radioTitle img{ margin:0; padding:0;}
+.toolBar .selectors .radioOption{ height: 25px; margin: 2px; display:inline-block; margin-top: 5px; float:left; }
+.toolBar .selectors .divisor{ float:left; }
+.toolBar .undo{ margin:10px; width:60px; height:30px;}
+.toolBar .selectors p{ margin:auto; padding:auto;}
+
+.toolBar .selector{ display:inline-block; text-align: right; line-height: 50px; margin: 0;}
+.toolBar .selectorImg { float:left; }
+.toolBar .radioOpt { float:left; margin-left: 5px; display: inline-block; }
+.toolBar .selectorImg .numeros {margin:0;}
+.toolBar .selector .title{ color:#000; float:left; }
+
+.fileBar{ display: inline-block; width: 100%; background: #FFF; padding-top: 3px;  }
+.fileBar .itemProjectContent{ float:left; display:inline-block; border:1px solid #CCC; border-bottom: none; margin-left: 2px; cursor: pointer; background: #ddd; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px;}
+.fileBar .itemProjectContent:hover{background:#EEE;}
+.fileBar .itemProjectContent .itemProject{ float:left; display:inline-block; padding: 5px; } 
+.fileBar .currentItemProject{ background: #FF6A5F; color: #fff; border:1px solid #ED5448; border-bottom: none; } 
+.fileBar .currentItemProject:hover{background: #ff5846;}
+.fileBar .itemProjectContent .closeItem{ margin: 4px; background: url(../img/closeItem.png); width: 11px; height: 13px; cursor: pointer; float:left;  }
+
+
+.calendar{ min-height:600px; position: relative; background:#FFF; width: 100%; display:inline-block; }
+.calendar .calendarArea{ width: 98%; margin-left: 1%; }
+.calendar .headerMed{background:#eff2f3;}
+.calendar .headerDose{background:#eff2f3;}
+.calendar .headerQuantity{background:#eff2f3;}
+.calendar .headerSchedule{background-color:#bdc3c7;}
+.calendar .calendarDays{background-color:#eff2f3;}
+.calendar .standardHeader{ background: #222; color: #eee; font-size: 14px; font-weight: bold; padding: 4px;  }
+.calendar .calendarContent{ width: 100%; display:inline-block;}
+.calendar table{ width: 100%; border-collapse: collapse; }
+.calendar table tr td{ border: 1px solid #ccc; margin:0; padding:0; font-weight:bold; }
+.calendar table tr td .complexCell{ border: none;}
+.calendar table tr td .complexCell tr td{ border: none;}
+.calendar table tr td .tableIcon{ cursor: pointer;}
+.calendar .frm { width: 100%;  margin-top:0;  }
+.calendar .calendarTableArea{ width: 100%; border-top: none; background:#d4d8d9; display:inline-block; font-family:Arial, Helvetica, sans-serif;
+}
+.calendar table tr td .restrictionsContent{ min-height: 80px; box-sizing: border-box; border: #dfb5a7 1px solid; width: 100%;  background:#fccdbd; color: #ff5846; font-size: 20px; -webkit-border-top-right-radius: 7px; -webkit-border-bottom-right-radius: 7px; -moz-border-radius-topright: 7px; -moz-border-radius-bottomright: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; }
+.calendar table tr td .restrictionsContent img{ width: 50px; height:50px; margin: 3px; }
+.calendar table tr td .recommendationsContent{ min-height: 80px;  box-sizing: border-box; border: #b6d1cc 1px solid; width: 100%; background:#cdece6; color: #4cc8b0; font-size: 20px; -webkit-border-top-left-radius: 7px; -webkit-border-bottom-left-radius: 7px; -moz-border-radius-topleft: 7px; -moz-border-radius-bottomleft: 7px; border-top-left-radius: 7px; border-bottom-left-radius: 7px; }
+.calendar table tr td .recommendationsContent img{ width: 50px; height:50px; margin: 3px; }
+.calendar table tr td .doseNumberContent{ width: 100%; text-align: center; }
+.calendar table tr td .doseImageContent{ text-align:center; }
+.calendar table tr td .doseImage{ width: 50px; margin: 4px; cursor: pointer; }
+.calendar table tr td .doseNameContent{ text-align:center; width: 100%;}
+.calendar table tr td .scheduleNumber{ height: 22px; width: 100%; cursor: pointer; text-align: center; margin: 1%; }
+.calendar table tr td .scheduleImage{ width: 70px; height: 70px; margin-top: 10px; margin-left: 5px; cursor: pointer; }
+.calendar table tr td .scheduleImage div{ float:left; padding: 2px;  }
+.calendar table tr td .scheduleControl{ clear:both; width: 100%; text-align: center; margin: 0;  }
+.calendar table tr td .complexMedicine{ height: 140px; width: 220px; }
+.calendar table tr td .complexMedicine .name{ padding: 3px; width: 214px; height: 16px; display:block; background: #eee; font-size: 16px; }
+.calendar table tr td .complexMedicine .name input{ width: 190px; }
+.calendar table tr td .complexMedicine .dose{ padding: 3px; margin-top: 2px; width: 170px; height: 16px; display:block; background: #eee; font-size: 16px; }
+.calendar table tr td .complexMedicine .dose input{ width: 140px; }
+.calendar table tr td .complexSchedule { width: 120px; height: 140px; }
+.calendar table tr td .complexSchedule .dayturn{ background: #eee; text-align: center; padding: 3px; width: 112px; border: 1px solid #999; height: 16px; display:block; font-size:#000;}
+.calendar table tr td .complexSchedule .dayturn input { width: 80px;}
+.calendar table tr td .complexSchedule .complexScheduleClockNumber{ cursor:pointer;  position: relative; text-shadow: 0 0 2px #fff; margin-top: 100px; width: 100%; text-align: center;}
+.calendar table tr td .complexSchedule .complexScheduleClock{ cursor:pointer; width: 70px; height: 70px; position: absolute; margin-top: 20px; margin-left: 10px; }
+.calendar table tr td .complexSchedule .complexScheduleClock div{ float:left; padding: 2px; }
+.calendar table tr td .masterPeriodCell{ background: #fff; display:inline-block; width: 98%; padding: 1%; }
+.calendar table tr td .masterPeriodCell .masterPeriodCheckBoxes{ margin: 2px; }
+.calendar table tr td .masterPeriodCell .masterPeriodCheckBoxes .masterPeriodCheckBox{ float:left; margin: 2px; background: #63ccc7; height: 25px; width: 25px; text-align: center; line-height: 25px; font-size: 17px; color:#2c5d59; }
+.calendar table tr td .periodCheckBoxes{ margin: 2px; }
+.calendar table tr td .periodCheckBoxes .periodCheckBox{ float:left; margin: 2px; background: #63ccc7; height: 25px; width: 25px; text-align: center; line-height: 25px; font-size: 17px; color:#2c5d59; }
+.calendar table tr td .medicineName{ height: 22px; width: 100%; text-align: center; margin: 1%; }
+.calendar table tr td .medicineLabel{ text-indent: 0; cursor: pointer; float:right; width: 20px; height: 20px; text-align: left; margin: 3px; border: 1px solid #ccc;}
+.calendar table tr td .medicineControl{ clear:both; width: 98%; text-align: center; margin: 1%;  }
+.standardHeaderCalendar{ background: #eee; }
+.standardUsualLineCalendar{  background: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.standardHeaderCalendar tr{ height:45px;}
+.recommendations{ }
+.recommendAndRestrictText{ margin: 10px; }
+
+.globalMessage{ margin: 50px; color: #444; font-size: 16px; }
+.globalMessage a{ text-decoration: underline; }
+
+.printCalendar{ width: 890px; margin: 4px; border-right: 1px solid #ccc;}
+.controlCalendar1 { width: 48px; }
+.controlCalendar1 tr td img{ margin: 5px; }
+
+
+.label{  min-height:600px; position: relative; background:#FFF; width: 100%; display:inline-block;}
+.label .labelContent{ width: 100%; display:inline-block;}
+.label .labelDiv { box-shadow: 0px 0px 4px #ccc; text-align: left; padding: 10px; display:inline-block; margin:5px; width: 400px; border: 1px solid #ccc; background: #fff; float:left; }
+.label .labelDiv input{ margin:0; padding: 2px; padding-top: 1px; border: 0;}
+.label .labelDiv form{ padding:0; margin:0; border: 0;}
+.label .labelDiv .labelMedicineColor{ cursor: pointer;  width: 54px; height: 54px; margin-right: 10px; float:right; border: 1px solid #eee;  }
+.label .labelDiv .deleteLabel{ cursor: pointer; width: 30px; height: 100px; float:right;  }
+.label .labelDiv .deleteLabel img{ width: 30px; height: 30px;  }
+.label .labelDiv .labelMedicineName{ margin-bottom: 3px; background: #eee; font-size: 15px; padding: 3px; border: 1px solid #ccc; font-weight: bold; width: 353px; }
+.label .labelDiv .labelDose{ margin-bottom: 3px; background: #eee; font-size: 15px; padding: 3px; border: 1px solid #ccc; font-weight: bold; float: left; width: 294px; }
+.label .labelDiv .labelPosology{ margin-bottom: 3px; background: #eee; font-size: 15px; padding: 3px; border: 1px solid #ccc; width: 294px; float:left; }
+.label .labelDiv .labelRemark{ background: #eee; font-size: 15px; padding: 3px; border: 1px solid #ccc; width: 353px; float:left; }
+.miniSquare { cursor: pointer; float:left; margin: 2px; width: 15px; height: 15px; border: 1px solid #eee; }
+
+.standardLink{ color: #006699; float: right; font-size: 14px; text-decoration: underline; clear:both; }
+.downCalendarButton{ float:right; cursor:pointer; margin-right: 10px; }
+
+.wrapper {	width:100%;	height:100%; }
+.wrapper h1{ margin-left:25px; background-color:#49697A; padding:25px; margin:0; color:#FFF; }
+.wrapper .locaisTrabalho{ background-color:#FFF; float:left;	width:50%; }
+.wrapper .locaisTrabalho ul li{ margin-top:25px; }
+.wrapper .subLocaisTrabalho{ background-color:#ECF0F1; float:right; width:50%; }
+.wrapper .subLocaisTrabalho ul { padding:25px; }
+.wrapper .subLocaisTrabalho li{ list-style-type:none; }
+.wrapper .selecLocalTrabalho li { margin-left:20px;	margin-bottom:30px; list-style-type:none; background-color:#DEE0E0; height:50px; }
+.wrapper .selecLocalTrabalho li:hover{ background-color:#BBBBBB; }
+.wrapper .selectItem { visibility:hidden; }
+.wrapper .nomeUnidade {	margin-left:25px; }
+
+.editableTextField{ cursor: pointer; background: #eee; color: #333; min-height: 23px; font-size: 16px; }
+.editableTextField form{ padding:0; margin:0;}
+.dynamicInput{ font-size: 14px; margin: 0px; padding: 0px; width:100%; }
+
+.footer{ height: 80px; clear:both; margin-top: 5px; border-top: 1px solid #ccc; background: #eee; }

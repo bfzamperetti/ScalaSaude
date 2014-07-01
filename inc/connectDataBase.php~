@@ -1,0 +1,11 @@
+<?php 
+$host = "localhost";
+$port = "5432";
+$dbname = "scalaSaude";
+$user = "root";
+$password = "scala.-ufrgs";  
+$dbh = new PDO("mysql:host=$host;dbname=$dbname", $user, $password, array(
+    PDO::ATTR_PERSISTENT => true
+));
+?>
+

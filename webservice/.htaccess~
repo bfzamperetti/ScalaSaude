@@ -1,0 +1,13 @@
+RewriteEngine on
+
+# RETRIEVE
+RewriteRule ^info/?$ index.php?retrieve=serverInfo
+RewriteRule ^patient/?$ index.php?retrieve=patient
+RewriteRule ^patientForAutocomplete/?$ index.php?retrieve=patientForAutocomplete
+RewriteRule ^usuario/([0-9]+)/?$ index.php?retrieve=usuario&id=$1
+
+# CREATE
+RewriteRule ^createPatient/?$ index.php?create=patient
+
+# UPDATE
+RewriteRule ^updatePatient/?$ index.php?update=patient

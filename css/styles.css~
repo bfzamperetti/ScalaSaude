@@ -1,0 +1,70 @@
+body, html{ font-family: arial; color: #222; top:0; left:0; padding:0; margin:0; position: absolute; width: 100%; height: 100%;}
+a{ color: #222; text-decoration: none;}
+ul{ margin:0; padding:0; }
+li{ margin:0; padding:0; }
+
+.divsForDialogs{ padding: 5px; display:none; background: #fff;}
+.button{ cursor: pointer; font-size: 16px; display: inline-block; background: #dedede; border: 1px solid #ccc; padding: 2px; margin: 2px; }
+
+.clock img{ position: absolute; }
+.period{ display: inline-block; }
+
+.contentNav{ width: 100%; display: inline-block; margin-top: 4px; }
+.contentNav ul{ width: 100%; border-bottom: 1px solid #ccc; height: 24px;}
+.contentNav li{ font-size: 14px; display: inline-block; height: 17px; border: 1px solid #ccc; background: #fff; border-bottom: 0; padding: 3px; margin: 0; margin-left: 1px; float:left; cursor: pointer;}
+
+.dialog{ position: absolute; height: 100%; width: 100%; top:0; left:0; }
+.dialog .transparentLayer{ position: fixed; background: url(../img/spacer.png); height: 100%; width: 100%; }
+.dialog .boxDialog{ position: absolute; display: inline-block; left: 50%; top: 50%; padding: 5px; background: #999; border-left: 2px solid #ccc; border-bottom: 2px solid #ccc;  }
+.dialog .boxDialog .buttonBox{ background: #fff; height: 30px; display: inline-block; width: 98%; padding: 1%; border-top: 1px solid #ccc; }
+
+.dialogScheduleConfigChooseClock{ padding: 3px; margin-left: 60px; margin-top: 20px; border: solid 1px #ccc; clear:both; display: inline-block; background: #eee; border-top: 1px solid #ccc; }
+.dialogScheduleConfigChooseClock div{ float:left; position: relative; }
+.dialogScheduleConfigChooseClock .period{  padding: 3px; border: solid 1px #ccc; }
+.dialogScheduleConfigChooseClock .clock{  }
+
+.dialogMedicineInputLabels{ padding: 4px; width: 240px; display:inline-block; border: 1px solid #ccc; }
+.dialogMedicineInputLabels .label{ margin: 3px; width: 20px; height: 10px; border: 1px solid #ccc; float:left; cursor: pointer;}
+.selectedLabel{ clear: both; width: 20px; height: 10px;  display:inline-block; border: 1px solid #ccc;  }
+
+.dialogChooseDoseImageContent{ padding: 1%; width: 95%; display:inline-block; border: 1px solid #ccc; }
+.dialogChooseDoseImageContent img{ cursor: pointer; border: 1px solid #ccc; margin: 2px; }
+.selectedDoseImage{ clear: both; display:inline-block;  }
+
+.toolBar{ display: inline-block; width: 100%; border: 1px solid #ccc;  }
+.toolBar img{ height: 25px; cursor: pointer; margin: 2px;}
+
+.fileBar{ display: inline-block; width: 100%; border: 1px solid #ccc; border-top: none; padding-top: 3px;  }
+.fileBar .itemProjectContent{ float:left; display:inline-block; border: 1px solid #ccc; border-bottom: none; margin-left: 2px; cursor: pointer; background: #ddd; }
+.fileBar .itemProjectContent .itemProject{ float:left; display:inline-block; padding: 2px; }
+.fileBar .currentItemProject{ background: #fff; }
+.fileBar .itemProjectContent .closeItem{ margin: 4px; background: url(../img/closeItem.png); width: 11px; height: 13px; cursor: pointer; float:left;  }
+
+
+.calendar .standardHeader{ background: #222; color: #eee; font-size: 14px; font-weight: bold; padding: 4px;  }
+.calendar { width: 100%; display:inline-block; margin-top: 4px; }
+.calendar .calendarContent{ width: 80%; margin-left: 2px; display:inline-block;}
+.calendar table{ width: 100%; border-collapse: collapse; background-color:#F00;}
+.calendar table tr td{ border: 1px solid #ccc;}
+.calendar table tr td .complexCell{ border: none;}
+.calendar table tr td .complexCell tr td{ border: none;}
+.calendar table tr td .tableIcon{ cursor: pointer;}
+.calendar .frm { width: 100%;  margin-top:0;  }
+.calendar .config{ width: 18%; float:left;  display:block; border-right: 1px solid #ccc; margin-left: 1%;}
+.calendar .config .title{ border-top: 1px solid #999; color: #444; padding-top: 4px; text-decoration: underline; }
+.calendar .config .option{ margin-left: 20px; color: #222; }
+.calendar .calendarTableArea{ width: 100%; border-top: none; display:inline-block;  }
+.calendar table tr td .doseNumberContent{ width: 100%; text-align: center; }
+.calendar table tr td .doseImageContent{ width: 100px; text-align:center; }
+.calendar table tr td .doseImage{ width: 33px; }
+.calendar table tr td .doseControl{ clear:both; width: 96px; text-align: center; margin: 2px;  }
+.calendar table tr td .doseControl img{ cursor: pointer;  }
+.calendar table tr td .scheduleNumber{ height: 22px; width: 100%; text-align: center; margin: 1%; }
+.calendar table tr td .scheduleImage{ width: 100% }
+.calendar table tr td .scheduleImage div{ float:left; padding: 2px; }
+.calendar table tr td .scheduleControl{ clear:both; width: 98%; text-align: center; margin: 1%;  }
+.calendar table tr td .medicineName{ height: 22px; width: 100%; text-align: center; margin: 1%; }
+.calendar table tr td .medicineName .medicineLabel{ float:right; width: 20px; height: 10px; margin: 3px; border: 1px solid #ccc;}
+.calendar table tr td .medicineControl{ clear:both; width: 98%; text-align: center; margin: 1%;  }
+
+.printCalendar{ margin: 20px; }
